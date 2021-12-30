@@ -1,0 +1,26 @@
+{
+  "name": "bd_lab_16",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cowsay": "^1.5.0",
+    "debug": "^4.3.3",
+    "express": "^4.17.2",
+    "http-errors": "^2.0.0",
+    "i": "^0.3.7",
+    "jade": "^1.11.0",
+    "mongoose": "^6.1.4",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15"
+  }
+}

@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  .row.contenido.justify-content-center
+    .col-md-7 
+        img(src='#{contenido.img}',width="100%")
+        h1= contenido.titulo
+        p
+            i= contenido.descripcion
+        p= contenido.contenido
+        p 
+          i= contenido.autor
+    
+    .col-md-3
+      .row.sidebar-tags
+        h3 Tags
+        each item in tags 
+          a(href="/tag/#{item}")= item
+      .row.mt-4
+        each item in noticias 
+          .card(style='width: 18rem;')
+            img.card-img-top(src='#{item.img}')
+            .card-body
+              h5.card-title #{item.titulo}
+              p.card-text
+                | #{item.description}
+              a.btn.btn-primary(href='/noticia/#{item.slug}') Ver Completo
